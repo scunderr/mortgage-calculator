@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './CalcButton.module.css'
+import classes from './CalcButton.module.css';
 
 const CalcButton = ({number, op}) => {
     return (
