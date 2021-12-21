@@ -1,0 +1,23 @@
+.counter {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.counterValue {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.counterPrice {
+    color: #fff;
+}
+
+.counterInscription {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    margin-right: 10px;
+    font-size: 21px;
+}

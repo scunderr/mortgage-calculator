@@ -1,0 +1,13 @@
+.CalcButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border: solid 2px rgb(53, 70, 221);
+    list-style-type: none;
+    margin-right: 10px;
+
+}
+

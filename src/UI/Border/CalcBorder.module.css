@@ -1,0 +1,5 @@
+.calcBorder {
+    margin: 15px;
+    height: 5px;
+    border-bottom: 2px darkgrey dotted;
+}

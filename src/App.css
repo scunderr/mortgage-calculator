@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.wrapper {
+    min-width: 1000px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.title {
+    font-size: 30px;
+    text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.hr {
+    margin: 15px 0 25px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.calculatorCounters {
+    display: flex;
+    align-items: center;
 }
+
+.calculatorHeader {
+    min-height: 90px;
+    padding: 10px 40px;
+}
+
+.calcBodyContainer {
+    background-color: #fff;
+    padding: 30px;
+}
+
+.blocks-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: start;
+    grid-row-gap: 40px;
+    grid-column-gap: 20px;
+}
+
+.field-buttons {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    min-height: 40px;
+}
+
+.field-buttons_btns {
+    list-style: 'none';
+    display: flex;
+}
+
+.field-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.field-buttons_ins {
+    font-size: 14px;
+    color: darkgrey;
+}
+
+.mortgageСalculator {
+    background-color: rgb(106, 149, 241);
+    border-radius: 30px;
+    border: solid rgb(106, 149, 241) 6px;
+}
+
+.calculatorFooter {
+    min-height: 70px;
+    padding: 5px 40px;
+}
+
+.monthlyPayment {
+    height: 60px;
+}
+

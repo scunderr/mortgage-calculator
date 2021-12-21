@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+.inputArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calcInputWrapper {
+    display: flex;
+    min-width: 280px;
+}
+
+.calcInput {
+    width: 200px;
+    border: solid 2px rgb(53, 70, 221);
+    height: 50px;
+    border-radius: 20px;
+    padding-left: 15px;
+    font-size: 21px;
+    display: flex;
+    margin-right: 5px;
+}
+
+.calcInputInscription {
+    /* text-align: center; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 16px;
+    width: 70px;
+    color: darkgrey;
+}
+
+.calcInput:focus {
+    background-color: #eef;
+    outline: none;
+}
+
+.label {
+    max-width: 170px;
+    margin-right: 10px;
+    font-size: 21px;
+}
