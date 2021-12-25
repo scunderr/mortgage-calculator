@@ -16,6 +16,7 @@
 
 .wrapper {
     min-width: 1000px;
+    padding: 0 15px;
 }
 
 .title {
@@ -27,17 +28,15 @@
     margin: 15px 0 25px 0;
 }
 
-.calculatorCounters {
+.calculator-counters {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-}
-
-.calculatorHeader {
     min-height: 90px;
     padding: 10px 40px;
 }
 
-.calcBodyContainer {
+.calc-body_container {
     background-color: #fff;
     padding: 30px;
 }
@@ -72,18 +71,18 @@
     color: darkgrey;
 }
 
-.mortgageСalculator {
+.mortgage-calculator {
     background-color: rgb(106, 149, 241);
     border-radius: 30px;
     border: solid rgb(106, 149, 241) 6px;
 }
 
-.calculatorFooter {
+.calculator-footer {
     min-height: 70px;
     padding: 5px 40px;
 }
 
-.monthlyPayment {
+/* .monthlyPayment {
     height: 60px;
-}
+} */
 

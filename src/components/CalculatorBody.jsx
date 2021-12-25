@@ -5,7 +5,7 @@ import FieldInput from './FieldInput';
 
 const CalculatorBody = () => {
     return (
-        <form className='calcBodyContainer'>
+        <form className='calc-body_container'>
             <FieldInput/>
             <CalcBorder/>
             <FieldButtons/>

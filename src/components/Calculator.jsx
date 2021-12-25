@@ -5,20 +5,16 @@ import CalculatorFooter from './CalculatorFooter';
 import CalculatorHeader from './CalculatorHeader';
 
 const Calculator = () => {
-    const {getMonthlyInstalment, getSumOfCredit} = useContext(CountContext);
+    // const {getMonthlyInstalment, getSumOfCredit} = useContext(CountContext);
 
     return (
-        <div className="mortgageСalculator">
-            <CalculatorHeader 
-              style={{fontSize: '40px'}}
-              inscription={'ЕЖЕМЕСЯЧНЫЙ ПЛАТЕЖ'} 
-              counter={getMonthlyInstalment}
-            />
+        <div className="mortgage-calculator">
+            <CalculatorHeader/>
             <CalculatorBody/>
             <CalculatorFooter
-              style={{fontSize: '25px'}}
-              inscription={'СУММА КРЕДИТА'} 
-              counter={getSumOfCredit}
+              // style={{fontSize: '25px'}}
+              // inscription={'СУММА КРЕДИТА'} 
+              // counter={getSumOfCredit}
             />
         </div>
     );

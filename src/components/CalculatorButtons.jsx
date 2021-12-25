@@ -1,7 +1,7 @@
 import React from 'react';
 import CalcButton from '../UI/Button/CalcButton';
 
-const CalculatorButtons = ({numbers, inscription, op}) => {
+const CalculatorButtons = ({numbers, inscription, templateValue}) => {
     return (
         <div className='field-buttons'>
             <ul className='field-buttons_btns'>
@@ -9,7 +9,7 @@ const CalculatorButtons = ({numbers, inscription, op}) => {
                     <CalcButton 
                         key={number}
                         number={number}
-                        op={op}
+                        onClick={()=>templateValue(number)}
                     />
                 )}
             </ul>

@@ -3,7 +3,7 @@ import CalcCounter from '../UI/Counter.jsx/CalcCounter';
 
 const CalculatorFooter = ({...props}) => {
     return (
-        <div className='calculatorCounters calculatorFooter'>
+        <div className='calculator-counters'>
             <CalcCounter {...props}/>
         </div>
     );

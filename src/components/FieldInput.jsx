@@ -13,6 +13,7 @@ const FieldInput = () => {
                 inscription={'РУБ.'}
                 value={inputValue.costOfFlat}
                 onChange={e => setInputValue({...inputValue, costOfFlat: e.target.value})}
+                maxLength={10}
             />
             <CalcInput
                 id='2' 
@@ -20,6 +21,7 @@ const FieldInput = () => {
                 inscription={'% ГОДОВЫХ'}
                 value={inputValue.interestRate}
                 onChange={e => setInputValue({...inputValue, interestRate: e.target.value})}
+                maxLength={5}
             />
             <CalcInput
                 id='3'
@@ -27,6 +29,7 @@ const FieldInput = () => {
                 inscription={'РУБ.'}
                 value={inputValue.initialPayment}
                 onChange={e => setInputValue({...inputValue, initialPayment: e.target.value})}
+                maxLength={10}
             />
             <CalcInput
                 id='4'
@@ -34,6 +37,7 @@ const FieldInput = () => {
                 inscription={'МЕС.'}
                 value={inputValue.mortgageTerm}
                 onChange={e => setInputValue({...inputValue, mortgageTerm: e.target.value})}
+                maxLength={3}
             />                   
         </div>
     );

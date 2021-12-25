@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { CountContext } from '../../context';
 import classes from './CalcButton.module.css';
 
-const CalcButton = ({number, op}) => {
+const CalcButton = ({number, ...props}) => {
+
     return (
         <li 
             className={classes.CalcButton}
-            onClick={()=>op()}
+            {...props}
         >
             {number}
         </li>
