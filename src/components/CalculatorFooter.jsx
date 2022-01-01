@@ -1,10 +1,20 @@
-import React from 'react';
-import CalcCounter from '../UI/Counter.jsx/CalcCounter';
+import React, { useContext } from 'react';
+import { CountContext } from '../context';
+import CalcCounter from '../UI/Counter/CalcCounter';
+import CalculatorChart from './CalculatorChart';
 
-const CalculatorFooter = ({...props}) => {
+const CalculatorFooter = () => {
+    const {getTotalAmount} = useContext(CountContext);
+
     return (
-        <div className='calculator-counters'>
-            <CalcCounter {...props}/>
+        <div className='calculator-footer'>
+            <CalcCounter
+                inscription={'СУММА ВЫПЛАТ БАНКУ'}
+                counter={getTotalAmount()}
+            />
+            <CalculatorChart
+                
+            />
         </div>
     );
 };

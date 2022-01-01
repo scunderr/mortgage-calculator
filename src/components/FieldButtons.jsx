@@ -12,7 +12,7 @@ const FieldButtons = () => {
             inscription: '% ОТ СТОИМОСТИ КВАРТИРЫ',
             getTemplateValue(num) {
                 if(inputValue.costOfFlat) {
-                    const payment = (inputValue.costOfFlat*num*0.01).toFixed(2)
+                    const payment = (inputValue.costOfFlat*num*0.01).toFixed()
                     setInputValue({...inputValue, initialPayment: payment})
                 }
             }

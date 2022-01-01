@@ -5,8 +5,24 @@ import CalcInput from '../UI/Input/CalcInput';
 const FieldInput = () => {
     const {inputValue, setInputValue} = useContext(CountContext);
 
+    // const fieldInputData = [
+    //     {id:'1', title: 'ОБЩАЯ СТОИМОСТЬ КВАРТИРЫ', value: inputValue.costOfFlat, inscription: 'РУБ.', maxLength: 10, change: (e) => setInputValue({...inputValue, costOfFlat: e.target.value})}, 
+    //     {id:'2', title: 'ПРОЦЕНТНАЯ СТАВКА', value: inputValue.interestRate, inscription: '% ГОДОВЫХ', maxLength: 5, change: (e) => setInputValue({...inputValue, interestRate: e.target.value})}, 
+    //     {id:'3', title: 'ПЕРВОНАЧАЛЬНЫЙ ВЗНОС', value: inputValue.initialPayment, inscription: 'РУБ.', maxLength: 10, change: (e) => setInputValue({...inputValue, initialPayment: e.target.value})}, 
+    //     {id:'4', title: 'СРОК ИПОТЕКИ', value: inputValue.mortgageTerm, inscription: 'МЕС.', maxLength: 3, change: (e) => setInputValue({...inputValue, mortgageTerm: e.target.value})}, 
+    // ]
+
     return (
         <div className="blocks-wrapper ">
+            {/* {fieldInputData.map(elem => 
+                <CalcInput
+                    title={elem.title}
+                    inscription={elem.inscription}
+                    value={elem.value}
+                    onChange={elem.change()}
+                    maxLength={elem.maxLength}
+                />
+            )} */}
             <CalcInput
                 id='1' 
                 title={'ОБЩАЯ СТОИМОСТЬ КВАРТИРЫ'}

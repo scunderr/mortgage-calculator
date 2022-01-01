@@ -1,5 +1,4 @@
-import React, { useContext } from 'react';
-import { CountContext } from '../../context';
+import React from 'react';
 import classes from './CalcButton.module.css';
 
 const CalcButton = ({number, ...props}) => {

@@ -1,0 +1,55 @@
+.graphicImage {
+    display: flex;
+    height: 25px;
+    border-radius: 10px;
+    border: #000 solid 1px;
+    overflow: hidden;
+    background-color: blue;
+    margin-bottom: 10px;
+}
+
+.totalityOfShares {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.share1 {
+    background-color: rgb(45, 94, 167);
+}
+
+.share2 {
+    background-color: rgb(193, 221, 233);
+}
+
+.explication {
+    display: flex;
+    justify-content: center;
+}
+
+.ins {
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+    padding: 0 30px;
+}
+
+.ins::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 0;
+    border: #000 solid 1px;
+    transform: translateY(46%);
+}
+
+.ins1::before {
+    background: rgb(45, 94, 167);
+}
+
+.ins2::before {
+    background: rgb(193, 221, 233);
+}
